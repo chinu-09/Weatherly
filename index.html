@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Weather Forecast</h1>
+        </div>
+
+        <div class="search-container">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for a city..." id="search-input">
+                <button id="search-button"><i class="fas fa-search"></i></button>
+                <button id="location-button"><i class="fas fa-location-arrow"></i></button>
+            </div>
+        </div>
+
+        <div class="current-weather">
+            <div class="location">
+                <h2 id="city-name">--</h2>
+                <p id="current-date">--</p>
+            </div>
+            <div class="weather-info">
+                <div class="temperature">
+                    <div class="temperature-value" id="current-temp">--°</div>
+                    <img src="" alt="Weather icon" class="weather-icon" id="weather-icon">
+                </div>
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <i class="fas fa-temperature-high"></i>
+                        <span id="feels-like">Feels like: --°</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-tint"></i>
+                        <span id="humidity">Humidity: --%</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-wind"></i>
+                        <span id="wind-speed">Wind: -- km/h</span>
+                    </div>
+                    <div class="detail-item">
+                        <i class="fas fa-cloud"></i>
+                        <span id="weather-condition">--</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="forecast">
+            <h3>5-Day Forecast</h3>
+            <div class="forecast-days" id="forecast-days">
+                <!-- Forecast items will be inserted here by JavaScript -->
+            </div>
+        </div>
+
+        <div class="loading-spinner" id="loading-spinner">
+            <div class="spinner"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
